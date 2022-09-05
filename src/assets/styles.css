@@ -9,23 +9,43 @@
 
 body{
 	background-color: #212121;;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
 }
 
-.home-h1 {
-  font-family: 'Luckiest Guy', cursive;
-  color: #ffffff;
-  padding-top: 50px;
-  font-size: 50px;
-  letter-spacing: 9px;
+.home-h1{
+  letter-spacing: .3rem;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+     -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+       -o-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
 }
 
-
-h1 {
-  text-align: center;
+.home-h1{
+  margin: -1rem;
+  padding-top: 5rem;
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 800px;
+  color: rgba(255,255,255,.1);
+  background-image: url(data:image/jpeg;base64,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);
+  background-repeat:repeat-x;
+  -webkit-background-clip: text;
+  animation: animate 15s linear infinite;
+  white-space: nowrap;
+  -webkit-text-stroke: 1px #626466;
 }
+
+@keyframes animate{
+  100%{
+    background-position: left 2400px top 1px;
+  }
+}
+
 /* ***** Navbar ***** */
+
 nav {
   text-align: center; 
   position: fixed; 
@@ -40,9 +60,8 @@ nav {
 ul{
 	display: flex;
 	width: 100%;
-	height: 15vh;
 	margin: auto;
-	max-width: 1000px;
+	max-width: 1542px;
 	justify-content: space-between;
 	text-align: center;
   text-decoration: none;
@@ -56,9 +75,11 @@ ul{
 }
 
 .nav-img {
-  float: right;
-  width: 259px;
-  height: 147px;
+  position: relative;
+  left: 20px;
+  top: 15px;
+  width: 213px;
+  height: 112px;
 }
 
 li {
@@ -74,7 +95,8 @@ li {
 li a {
   text-decoration: none;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
+
   
   
 }
@@ -84,7 +106,7 @@ li:hover {
   background-size: 100% 100%;
   color: #27262c;
   animation: spring 300ms ease-out;
-  text-shadow: 1px -5px 0 #716c6b;
+  text-shadow: 1px -5px 0 #3da9d9;
 	font-weight: bold;
 }
 
@@ -117,16 +139,19 @@ li:active {
   width: 100%;
 }
 
+
+
 .parks {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 7rem 0;
+  margin: 20rem 0;
   text-align: center;
   white-space: none;
 }
 
 .park-cards {
+  font-size: 16px;
   margin: 2rem 0;
   padding: 28px;
   text-decoration: none;
@@ -135,7 +160,7 @@ li:active {
   height: 400px;
   border-radius: 30px;
   background: #212121;
-  box-shadow: 10px 10px 30px rgb(25, 25, 25),
+  box-shadow: 10px 10px 30px #191919,
               -10px -10px 20px rgb(60, 60, 60);
 }
 
@@ -148,7 +173,7 @@ li:active {
   height: 225px;
   object-fit: cover;
   border-radius: 25px;
-  border: solid .5px #716c6b;
+  border: solid .5px #878a8b;
   margin-bottom: 10px;
 }
 
@@ -195,7 +220,7 @@ b {
 
 .website-link a {
   text-decoration: none !important; 
-  color: #716c6b ;
+  color: #ffffff ;
 }
 
 .single-park > img {
@@ -408,6 +433,8 @@ form {
   background: #212121;
   box-shadow: 15px 15px 30px #191919,
               -15px -15px 30px #191919;
+} form input {
+  width: 300px;
 }
 
 .add-park-btn {
@@ -421,13 +448,40 @@ form {
   border: 1px solid #e8e8e8;
 }
 
-
 /* ***** Footer ***** */
 footer {
   width: 100%;
   text-align: center;
   color: white;
 }
+
+
+/* ***** Like Button ***** */
+
+.counter {
+  color: white;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  row-gap: 20px;
+}
+
+.counter-output {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+
+
+.count-btn {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+
 
 
 

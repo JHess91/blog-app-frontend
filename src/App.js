@@ -7,7 +7,9 @@ import Home from './pages/Home'
 import AddPark from './pages/AddPark'
 import SinglePark from './pages/SinglePark'
 import AdminEdit from './pages/AdminEdit'
-import AboutMe from './pages/AboutMe'
+import LikeBtn from './pages/LikeBtn'
+
+
 
 function App() {
   return (
@@ -19,7 +21,7 @@ function App() {
           <Route path='/add-park' element={<AddPark />}  />
           <Route path='/single-park' element={<SinglePark />} />
           <Route path='/admin-edit' element={<AdminEdit />} />
-          <Route path='/about-me' element={<AboutMe />} />
+          <Route path='/like-btn' element={<LikeBtn />} />
         </Routes>
         <Footer />
       </BrowserRouter>

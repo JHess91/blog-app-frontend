@@ -18,7 +18,7 @@ const AdminEdit = () => {
     event.preventDefault()
     console.log('Sending to API for delete')
 
-    fetch(`http://localhost:4001?name=${name}`, {
+    fetch(`${process.env.REACT_APP_API_ENDPOINT}?name=${name}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ const AdminEdit = () => {
   const updatePark = (event) => {
     event.preventDefault()
 
-    fetch(`http://localhost:4001?name=${name}`, {
+    fetch(`${process.env.REACT_APP_API_ENDPOINT}?name=${name}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ const AdminEdit = () => {
       .then((response) => response.json())
       .then((data) => setForm(data))
       .catch((err) => console.error(err))
-      navigate('/single-park')
+      navigate('/')
 
     console.log('Product sent to API')
   }
@@ -61,7 +61,6 @@ const AdminEdit = () => {
             <button className="add-btn"><a href="/add-park">+</a></button>
           </div>
       <h1>{name}</h1>
-        {/* <img src={`https://source.unsplash.com/random?sig=${index}`} alt="" /> */}
         <img src={url} alt="" />
         <br />
         <h3>{address}</h3>

@@ -6,7 +6,7 @@ const Home = () => {
   const [parks, setParks] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:4001')
+    fetch(`${process.env.REACT_APP_API_ENDPOINT}`)
     .then(response => response.json())
     .then(data => setParks(data))
     .catch(err => console.error(err))
@@ -20,8 +20,8 @@ const Home = () => {
 
 
   return (
-    <div className="container">
-      <h1 className="home-h1">Aquariums Around America</h1>
+    <div className="middle">
+      <h1 className="home-h1">Aquariums around america</h1>
       <div className="parks">{allAquariums}</div>
     </div>
   )

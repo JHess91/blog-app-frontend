@@ -8,7 +8,7 @@ const AddPark = () => {
   const newPark = (event) => {
     event.preventDefault()
 
-    fetch('http://localhost:4001', {
+    fetch(`${process.env.REACT_APP_API_ENDPOINT}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
