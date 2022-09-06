@@ -1,23 +1,26 @@
 import { Link } from 'react-router-dom'
+import LikeBtn from '../pages/LikeBtn'
 
 export const AquariumCard = ({ parks, index }) => {
   return (
-    <Link state={parks} to="/single-park" className="park-cards" key={index}>
-      <h3 className="name-text">{parks.name}</h3>
-      <img src={parks.url} alt="" />
-      <small className="address-text">{parks.address}</small>
-      <br />
-      <small className="hour-text">
+    <>
+      <Link state={parks} to="/single-park" className="park-cards" key={index}>
+        <h3 className="name-text">{parks.name}</h3>
+        <img src={parks.url} alt="" />
+        <small className="address-text">{parks.address}</small>
         <br />
-        <b>Hours</b>
-        {parks.hours}
-      </small>
-      <br />
-      <small className="price-text">
+        <small className="hour-text">
+          <br />
+          <b>Hours</b>
+          {parks.hours}
+        </small>
         <br />
-        <b>Price</b>
-        {parks.price}
-      </small>
-    </Link>
+        <small className="price-text">
+          <br />
+          <b>Price</b>
+          {parks.price}
+        </small>
+      </Link>
+    </>
   )
 }

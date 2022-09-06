@@ -5,6 +5,7 @@ const LikeBtn = () => {
 
   const increase = () => {
     setCounter((count) => count + 1)
+    
   }
 
   return (

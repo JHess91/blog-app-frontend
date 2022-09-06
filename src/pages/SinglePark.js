@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
+import LikeBtn from './LikeBtn'
 
 const SinglePark = () => {
   const location = useLocation()
@@ -8,6 +9,7 @@ const SinglePark = () => {
   return (
     <div className="single-container">
       <div className="single-park">
+      <LikeBtn className="like-btn" />
         <h1>{name}</h1>
         <img src={url} alt="" />
         <br />
