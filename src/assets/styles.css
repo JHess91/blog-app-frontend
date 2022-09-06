@@ -186,6 +186,7 @@ li:active {
   padding: 10px;
   text-align: center;
   align-items: center;
+  height: 80vh;
 }
 
 .single-park {
@@ -435,8 +436,14 @@ form {
   background: #212121;
   box-shadow: 15px 15px 30px #191919,
               -15px -15px 30px #191919;
-} form input {
+} 
+
+form input {
   width: 300px;
+}
+
+.form-card {
+  height: 77vh;
 }
 
 .add-park-btn {

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import LikeBtn from '../pages/LikeBtn'
 
 export const AquariumCard = ({ parks, index }) => {
   return (
