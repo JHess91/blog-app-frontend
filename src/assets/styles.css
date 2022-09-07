@@ -87,7 +87,7 @@ li {
   text-transform: uppercase;
   cursor: pointer;
   color: #ebebeb;
-	min-width: 80px;
+	min-width: 465px;
 	margin: 2rem;
   text-decoration: none;
 }
@@ -236,7 +236,7 @@ b {
 
 .update-form form {
   position: absolute;
-  left: 320px;
+  left: 255px;
   top: 8rem;
   border: 1px solid gray;
   align-items: center;
